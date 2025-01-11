@@ -982,8 +982,6 @@ section,
 
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
-  border-radius: 50%;
-  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
   margin: 0 auto;
 }
 
@@ -1210,7 +1208,7 @@ section,
   position: absolute;
   height: 105%;
   width: 105%;
-  background-image: conic-gradient(from var(--angle) ,transparent 85%,blue);
+  background-image: conic-gradient(from var(--angle) ,transparent 85%,rgba(0, 191, 255, 0.771));
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -1637,4 +1635,35 @@ section,
 
 .whatsapp-button img:hover {
   transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.footer_main {
+  border-bottom: 1px solid white;
+  padding: 25px 0px;
+}
+
+.footer_logo img {
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .footer_logo img {
+    width: 150px;
+  }
+
+  .logo .sitename {
+    font-size: 15px;
+  }
+
+  .footer .sitename {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 15px;
+  }
+
+  .copyright .sitename, span {
+    font-size: 12px;
+  }
 }
