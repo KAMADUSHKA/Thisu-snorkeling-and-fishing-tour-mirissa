@@ -335,6 +335,7 @@ h6 {
     line-height: 0;
     margin-right: 10px;
     cursor: pointer;
+    z-index: 9999;
     transition: color 0.3s;
   }
 
@@ -346,10 +347,11 @@ h6 {
   .navmenu ul {
     display: none;
     list-style: none;
-    position: absolute;
-    inset: 60px 20px 20px 20px;
+    /* position: absolute;
+    inset: 60px 20px 20px 20px; */
+    height: auto;
     padding: 10px 0;
-    margin: 0;
+    margin: 20px;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
     overflow-y: auto;
@@ -432,11 +434,11 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
+    color: #fd5000;
     position: absolute;
     font-size: 32px;
-    top: 15px;
-    right: 15px;
+    top: 23px;
+    right: 23px;
     margin-right: 0;
     z-index: 9999;
   }
@@ -1665,5 +1667,33 @@ section,
 
   .copyright .sitename, span {
     font-size: 12px;
+  }
+
+  .header {
+    padding: 0px;
+  }
+}
+
+/* .service-list li {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+
+
+@media (max-width: 768px) {
+  .service-list strong {
+    width: 65%;
+    font-size: 13px;
+  }
+  
+  .service-list span {
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .service-list span {
+    white-space: normal;
+    word-wrap: break-word;
   }
 }
